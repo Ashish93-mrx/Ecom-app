@@ -1,0 +1,174 @@
+/* header styles */
+
+.header {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.cartitem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+  margin-bottom: 20px;
+}
+
+.cartItemImg {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.cartItemDetail {
+  display: flex;
+  flex: 1;
+  padding: 0 20px;
+  flex-direction: column;
+}
+
+/* Home Page */
+
+.home {
+  display: flex;
+}
+
+.content {
+  padding-top: 80px; /* Adjust the padding as needed */
+}
+
+.filters {
+  /* background-color: #343a40; */
+  background-color: #3286db;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin: 10px;
+  height: 86vh;
+}
+
+/* slider.css */
+.fixed-sidebar {
+  position: fixed;
+  top: 80px; /* Adjust the top position based on your header height */
+  left: 0;
+  width: 200px; /* Adjust the width as needed */
+  padding: 15px;
+   /* Add your desired background color */
+  /* Optional: Add a border on the right side */
+  height: 100vh; /* Make the sidebar full height */
+  overflow-y: auto; /* Add scroll if content exceeds height */
+}
+
+/* Add any additional styling as needed */
+
+
+.filters > span {
+  padding-bottom: 20px;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.productContainer {
+  display: flex;
+  width: 78%;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.products {
+  width: 30%;
+  margin: 10px;
+}
+
+.summary {
+  width: 30%;
+}
+
+/* Media Queries 
+@media (max-width: 771px) {
+  .filters {
+    width: 40%;
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .filters > span {
+    font-size: 10px;
+  }
+
+  .title {
+    font-size: 18px !important;
+  }
+
+  .productContainer {
+    width: 58%;
+    padding: 0;
+  }
+
+  .search {
+    display: none !important;
+  }
+
+  .products {
+    width: 100%;
+  }
+}*/
+
+/* ... (existing styles) ... */
+
+/* ... (existing styles) ... */
+
+/* ... (existing styles) ... */
+
+/* Media Queries */
+@media (max-width: 767px) {
+  .home {
+    flex-direction: column;
+  }
+
+  .filters {
+    width: 40%;
+    padding: 10px;
+    margin: 5px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #3286db; /* Adjust background color as needed */
+    color: white;
+    overflow-y: auto;
+    z-index: 999; /* Set a high z-index to ensure it appears above other elements */
+  }
+
+  .filters > span {
+    font-size: 10px;
+  }
+
+  .title {
+    font-size: 18px !important;
+  }
+
+  .productContainer {
+    width: 100%;
+    padding: 0;
+    margin-right: 40%; /* Adjust the right margin to accommodate the fixed filter */
+  }
+
+  .search {
+    display: none !important;
+  }
+
+  .products {
+    width: 100%;
+  }
+}
+
+/* ... (other media queries as needed) ... */

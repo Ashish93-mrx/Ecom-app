@@ -1,0 +1,43 @@
+/*Assuming the image element has a class name of 'image' */
+.image {
+  /*
+    width: 250px;
+    max-width: 100%;  Set the maximum width to 100% of the container 
+    height: auto; 
+    max-width: 100%;
+  max-height: 100% */ 
+  /* Set the maximum height to 100% of the container */
+ 
+    /* object-fit: contain; */
+    display: none; /* Initially hide the image */
+  }
+  
+  .image.block {
+    width: 10px; /* Set the width to your desired size */
+  height: 7px; /* Set the height to your desired size */
+  object-fit: contain; /* Maintain the aspect ratio */
+    display: block; /* Show the image when the 'block' class is present */
+  }
+  
+  /* .fixed-sidebar {
+    background-color: #3286db;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin: 10px;
+  height: 86vh;
+    position: fixed; */
+    /* top: 0;
+    left: 0; */
+    /*width: 200px; /* Adjust the width as needed 
+    padding: 15px;
+    background-color: #fff; /* Add your desired background color 
+    border-right: 1px solid #ddd; /* Optional: Add a border on the right side */
+    /*height: 100vh; /* Make the sidebar full height 
+    overflow-y: auto; /* Add scroll if content exceeds height */
+
+  
+  /* Add any additional styling as needed */
+  
