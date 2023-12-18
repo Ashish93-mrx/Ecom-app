@@ -46,7 +46,7 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
-  width: 20%;
+  width: 60%;
   margin: 10px;
   height: 86vh;
 }
@@ -76,7 +76,7 @@
 
 .productContainer {
   display: flex;
-  width: 78%;
+  width: 98%;
   padding: 20px;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -124,21 +124,21 @@
 /* existing styles */
 
 /* Media Queries */
-@media (max-width: 771px) {
-  .home {
-    flex-direction: column;
-  }
 
+@media (max-width: 331px) {
   .filters {
     width: 40%;
     padding: 10px;
     margin: 5px;
     position: fixed;
-    right: 0;
-    top: 0;
-    bottom: 0;
     overflow-y: auto;
-    z-index: 999; /* Set a high z-index to ensure it appears above other elements */
+    z-index: 999;
+  }
+}
+
+@media (max-width: 771px) {
+  .home {
+    flex-direction: column;
   }
 
   .filters > span {
