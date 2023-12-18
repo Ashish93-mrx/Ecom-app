@@ -36,11 +36,10 @@
 }
 
 .content {
-  padding-top: 80px; /* Adjust the padding as needed */
+  padding-top: 80px; 
 }
 
 .filters {
-  /* background-color: #343a40; */
   background-color: #3286db;
   color:black;
   padding: 20px;
@@ -63,8 +62,6 @@
   overflow-y: auto; 
 }
 
-/* Add any additional styling as needed */
-
 
 .filters > span {
   padding-bottom: 20px;
@@ -76,10 +73,10 @@
 
 .productContainer {
   display: flex;
-  width: 98%;
+  width: 88%;
   padding: 20px;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .cart_page {
@@ -99,17 +96,12 @@
   margin: 10px;
 }
 
-/* .summary {
-  
-} */
-
 .productContainer_cart {
   display: flex;
-  width: 58%;
+  width: 70%;
   
   padding: 20px;
   flex-wrap: wrap;
-  justify-content: space-around;
 }
 
 .filterssummary{
@@ -120,15 +112,12 @@
   flex-direction: column; 
   width: 30%;
   margin: 10px;
-  /* height: 86vh; */
   position: fixed;
   top: 80px; 
   right: 0;
   padding: 15px;
-  
   height: 100vh; 
-  overflow-y: auto; 
-
+  overflow-y: auto;
 }
 
 /* Media Queries 
@@ -164,6 +153,11 @@
 /* existing styles */
 
 /* Media Queries */
+@media (max-width: 768px) {
+  .search {
+    width: 100%;
+  }
+}
 
 @media (max-width: 331px) {
   .filters {
@@ -206,7 +200,7 @@
   .productContainer {
     width: 100%;
     padding: 0;
-    margin-right: 40%; /* Adjust the right margin to accommodate the fixed filter */
+    margin-right: 40%; 
   }
 
   .search {
@@ -220,14 +214,5 @@
   .summary {
     width: 30%;
   }
-  /* .productContainer_cart {
-    display: flex;
-    width: 28%;
-    
-    padding: 5px;
-    flex-wrap: wrap;
-    
-  } */
+  
 }
-
-/* ... (other media queries as needed) ... */

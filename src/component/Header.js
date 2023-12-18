@@ -23,12 +23,12 @@ const Header = () => {
 
   return (
     <Navbar className="fixed-top" bg="dark" variant='dark' style={{ height:80}} >
-        <Container>
-          <Navbar.Brand >
+        <Container style={{flexWrap:"wrap"}}> 
+          <Navbar.Brand>
             <Link to="/">Shop-karo</Link>
           </Navbar.Brand>
           <Navbar.Text className='search'>
-            <FormControl style={{width:500}}
+            <FormControl style={{width:500, left:0}}
             placeholder='search a product'
             className='m-auto'
             onChange={(e)=> {
@@ -39,8 +39,8 @@ const Header = () => {
           }}
             />
           </Navbar.Text>
-          <Nav>
-          <div style={{ flexDirection: 'column' }}>
+          <Nav style={{alignRight:0}}>
+          {/* <div style={{ display:"flex", flexDirection: 'row',right:"0"}}> */}
             <Dropdown alignRight>
               <Dropdown.Toggle variant="success">
                 <FaShoppingCart color="white" fontSize="25px" />
@@ -84,9 +84,9 @@ const Header = () => {
                   )}
               </Dropdown.Menu>
             </Dropdown>
-            </div>
+            
           </Nav>
-        </Container>
+        </Container> 
       </Navbar>
   );
 };
