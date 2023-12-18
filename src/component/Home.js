@@ -51,7 +51,7 @@ const Home = () => {
 
     <div className="home">
       <Filter/>
-      //<div style={{ display: "flex", flexDirection: "column", marginLeft: '220px' }}>
+      <div style={{ display: "flex", flexDirection: "column", marginLeft: '220px' }}>
       {/* <Imageslider /> */}
       <div className="productContainer">
         {
@@ -60,7 +60,7 @@ const Home = () => {
           })
         }
       </div>
-      //</div>
+      </div>
     </div>
     //</div>
   )

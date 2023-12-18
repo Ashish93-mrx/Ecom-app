@@ -42,7 +42,7 @@
 .filters {
   /* background-color: #343a40; */
   background-color: #3286db;
-  color: white;
+  color:black;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -121,14 +121,10 @@
   }
 }*/
 
-/* ... (existing styles) ... */
-
-/* ... (existing styles) ... */
-
-/* ... (existing styles) ... */
+/* existing styles */
 
 /* Media Queries */
-@media (max-width: 767px) {
+@media (max-width: 771px) {
   .home {
     flex-direction: column;
   }
@@ -141,8 +137,6 @@
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: #3286db; /* Adjust background color as needed */
-    color: white;
     overflow-y: auto;
     z-index: 999; /* Set a high z-index to ensure it appears above other elements */
   }
