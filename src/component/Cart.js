@@ -21,8 +21,8 @@ const Cart = () => {
   },[cart])
 
   return (
-    <div className="home">
-      <div className="productContainer">
+    <div className="cart_page">
+      <div className="productContainer_cart">
         <ListGroup>
           {
             cart.map((pd)=>(
@@ -73,7 +73,7 @@ const Cart = () => {
             ))}
         </ListGroup>
       </div>
-      <div className="filters summary">
+      <div className="filterssummary">
           <span className="title">Subtotal ({cart.length}) items</span>
       
       <span style={{ fontWeight:700, fontSize:20}}>Total: Rs.{total}</span>
