@@ -44,13 +44,14 @@ const Home = () => {
 };
 
   console.log(products)
-  return (<div style={{ display: "flex", flexDirection: "column", marginLeft: 'auto', marginRight: 'auto', maxWidth: '1200px' }}>
+  return (
+    // <div style={{ display: "flex", flexDirection: "column", marginLeft: 'auto', marginRight: 'auto', maxWidth: '1200px' }}>
   
 
 
     <div className="home">
       <Filter/>
-      <div style={{ display: "flex", flexDirection: "column", marginLeft: '220px' }}>
+      //<div style={{ display: "flex", flexDirection: "column", marginLeft: '220px' }}>
       {/* <Imageslider /> */}
       <div className="productContainer">
         {
@@ -59,9 +60,9 @@ const Home = () => {
           })
         }
       </div>
-      </div>
+      //</div>
     </div>
-    </div>
+    //</div>
   )
 }
 
